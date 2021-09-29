@@ -1,0 +1,652 @@
+/* Custom CSS for Typography & Color Scheme below here */
+* {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #fffced;
+}
+
+/* For Teal background please use this color #619B9D */
+/* For Beige background please use this color #fffced */
+/* For grey font please use this color #606060 */
+
+/* Custom CSS for home.html below here */
+.prezytealbg {
+  background-color: #619B9D;
+  color: white;
+}
+
+ /*edited by ray */
+.jumbotron {
+  display: flex;
+  background-image: url("/images/TRUKOMBU\ home\ banner.png");
+  height:100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 1.9rem;
+}
+
+.jumbotron .container{
+  display: flex;
+  color: white;
+  line-height: normal;
+  padding: 50px;
+}
+
+.jumbotron h1 {
+  line-height: normal;
+}
+
+ /*edited by ray */
+.buttonShopNow, .buttonReadMore {
+  background-color: #606060;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  padding: 16px 32px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+ 
+.container-fluid {
+  text-align: center;
+  
+}
+/*edited by ray */
+.adjustcontainer-fluid{
+  padding: 40px;
+  margin-top:-30px;
+}
+
+  /* home.html Carousel */
+  .container-xl .carousel {
+    margin: 30px auto 90px;
+    padding: 0 80px;
+  }
+
+  .carousel .carousel-item {
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .carousel .carousel-item img {
+    max-width: 100%;
+    display: inline-block;
+  }
+  .carousel .carousel-item .btn {
+    border-radius: 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    background: #606060;
+    padding: 8px 20px;
+    margin-top: 5px;
+  }
+  .carousel .carousel-item .btn:hover {
+    background: #000000;
+  }
+  .carousel .carousel-item .btn i {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 5px;
+  }
+  .carousel .thumb-wrapper {
+    margin: 5px;
+    text-align: left;
+    background: #fff;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.1);   
+  }
+  .carousel .thumb-content {
+    padding: 15px;
+    font-size: 14px;
+    color: #606060;
+  }
+
+  .carousel .thumb-content p {
+    font-weight: lighter;
+  }
+
+  /*edited by ray */
+  .carousel-control-prev, .carousel-control-next {
+    height: 35px;
+    width: 35px;
+    background: none;	
+    margin: auto 0;
+    border-radius: 100%;
+    border: 2px solid white;
+  }
+  
+  .container-xl .carousel-indicators {
+    bottom: -50px;
+  }
+  .carousel-indicators li, .carousel-indicators li.active {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 4px;
+    border: none;
+  }
+  .carousel-indicators li {	
+    background: #fcfcfc;
+  }
+  .carousel-indicators li.active {	
+    background: #555;
+  }
+
+  /* End of carousel CSS */
+
+#join-the-community {
+color: #606060;
+}
+
+#join-the-community a {
+  color: #606060;
+}
+
+  /* email input form */
+
+/*ray */
+
+.container-content {
+  color: #ffffff; 
+  text-shadow: 2px 2px #000000;
+}
+
+.hidden{
+  display:none;
+}
+
+#join-the-community input {
+  background: none;
+  border:none;
+  border-bottom: 1px solid #606060;
+  padding: 5px 10px;
+  outline: none;
+  }
+
+#join-the-community ::placeholder {
+  color: #606060;
+  opacity: 0.5;
+  font-size: 13px;
+}
+
+#join-the-community button {
+  color: #606060;
+  background: none;
+  border: none;
+  vertical-align: middle;
+}
+
+#join-the-community button:hover {
+  color: #000000;
+  background: none;
+  border: none;
+  vertical-align: middle;
+}
+
+/* Custom CSS for aboutUs.html below yanah*/
+
+.aboutUsSection {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 10px;
+}
+
+.aboutUsSection > * {
+  grid-column: 1/ span 12;
+  letter-spacing: 1px;
+}
+
+.spaceForTop {
+  position: relative;
+  height: 40px;
+}
+
+.MVG {
+  display: grid;
+  grid-template-rows:auto;
+  grid-template-columns: repeat(12, 1fr);
+  text-align: center;
+}
+
+.mvgMission {
+  grid-row: 1;
+  grid-column: 3/span 8;
+  font-weight: bolder;
+  font-style: italic;
+  font-variant: small-caps;
+}
+
+.mvgMissionP {
+  grid-row: 2;
+  grid-column: 3/span 8;
+}
+
+.mvgVision {
+  grid-row: 3;
+  grid-column: 3/span 8;
+  font-weight: bolder;
+  font-style: italic;
+  font-variant: small-caps;
+}
+
+.mvgVisionP {
+  grid-row: 4;
+  grid-column: 3/span 8;
+}
+
+.mvgGoal {
+  grid-row: 5;
+  grid-column: 3/span 8;
+  font-weight: bolder;
+  font-style: italic;
+  font-variant: small-caps;
+}
+
+.mvgGoalP {
+  grid-row: 6;
+  grid-column: 3/span 8;
+}
+
+.teamPrezySelfIntro {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: (12,1fr);
+}
+
+.creatorBanner {
+  font-weight: bolder;
+  font-style: italic;
+  font-variant: small-caps;
+  align-items: center;
+  justify-items: center;
+  font-size: 2em;
+  text-align: center;
+  grid-column: 1/span 4;
+}
+
+.creator {
+  grid-column-start: 1;
+  grid-column-end: five;
+  justify-self: center;
+  background-color: #91c0c2;
+}
+
+.personalSpace {
+  display: grid;
+  grid-row: 4;
+  align-items: center;
+  justify-items: center;
+  padding: 5px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.profilePic {
+  grid-row: 3;
+  grid-column: 1/span 12;
+  position: relative;
+  width: 50%;
+  align-items: center;
+}
+
+.dP {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0%;
+  width: 200px;
+  opacity: 0.9;
+  transition: .5s ease;
+  border: 4px solid #a3c3c6;
+  border-radius: 50%;
+}
+
+.overLay {
+  display: block;
+  grid-column: 1/span 2;
+  width: 200px;
+  height: auto;
+  border: 4px solid #a3c3c6;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.profilePic:hover .overLay {
+  opacity: .9; 
+}
+
+.personalSpace p {
+  display: block;
+  grid-row: 4/span 6;
+  grid-column: 1/span 11;
+  text-align: justify;
+}
+
+.iconLinkedin {
+  color: grey;
+}
+
+.nameIcon {
+  font-weight: bolder;
+  grid-column: 8/span 4;
+  grid-row: 12;
+  align-items: center;
+  justify-items: center;
+}
+
+/*End of aboutUs.html section - Yana */
+
+
+/* Custom CSS for productListing.html - Ziying */
+.prezybeigebg {
+  background-color: #fffced;
+}
+
+.htmlScroll {
+  scroll-behavior: smooth;
+}
+
+.modalCarousel img {
+  height: auto;
+  width: 250px;
+}
+
+.modal-body .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.modal-body .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+#backToTopButton {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 10px; /* Place the button 10px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #3C78BD; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 12px; /* Decrease font size */
+}
+
+#backToTopButton:hover {
+  background-color: #64701E; /* Add a background on hover */
+}
+
+.counter {
+  width: 150px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.counter input {
+  width: 50px;
+  border: 0;
+  line-height: 30px;
+  font-size: 16px;
+  text-align: center;
+  background: #fff;
+  color: #000000;
+  appearance: none;
+  outline: 0;
+}
+
+.counter span {
+  display: block;
+  font-size: 20px;
+  padding: 0 10px;
+  cursor: pointer;
+  color: #000000;
+  background: #dddddd;
+  user-select: none;
+}
+
+#modalPrice {
+  margin: 0px;
+  padding: 10px 10px 0px 0px;
+}
+
+/* End of Custom CSS for productListing.html - Ziying */
+
+/* Custom CSS for product_info_form.html below here */
+.modal_header_color {
+  background-color: #619b9d;
+  color: white;
+}
+
+.modal_content_color {
+  background-color: #fffced;
+}
+
+.lg_checkbox{
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+}
+
+.pill_design{
+background-color:#859aaf;
+color:white;
+
+}
+
+.flex-con{
+
+display: flex;
+justify-content: center;
+}
+
+.primary_title{
+ background-color:#53a1a3;
+ color:white;
+ padding-top:100px;
+ padding-bottom:30px;
+ 
+
+}
+
+.secondary_title{
+  padding-top:20px; 
+  padding-bottom:20px; 
+  font-size: 16px;
+
+}
+
+
+.adjustform{ /* align the product info form */
+  margin:20px;
+}
+
+.forcecursor {
+  cursor: pointer;
+}
+
+
+/* Other Custom CSS */
+.forcecursor {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+
+  /* 1st media query section */
+.border-right{  /* to remove the right grey line */
+  border-right:0px !important;
+} 
+
+.pill_design{ /* align the label with input field for the product info form */
+width:93%;
+margin-left:15px;
+
+}
+
+.adjustlabel{ /* align label for the contact form  */
+text-align:left !important;
+    
+}
+
+
+/* 2nd media query section */
+/* Custom CSS for home.html RESPONSIVE */
+  .jumbotron_pic {
+    background-image: url("/images/TRUBOMBU_jumbotron_resp2.png");
+    background-size: cover;
+    margin-top: 4rem !important;
+    padding-bottom: 2rem;
+  }
+
+  .jumbotron .container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 20px 0px 250px 0px;
+  }
+
+  .container-content {
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 2px 2px #000000;
+  }
+
+  .jumbotron h1 {
+  font-size: 250%;
+  }
+
+    /* Carousel */
+  #featuredCarousel {
+   display:none;
+  }
+
+  #featuredCarousel_mobile {
+    display: flex;
+    padding-bottom: 30px;
+   }
+
+  #featuredCarousel_mobile .carousel-indicators {
+    bottom: -15px;
+  }
+  #featuredCarousel_mobile .thumb-content {
+    text-align: center;
+  }
+
+  .container-fluid #featuredCarousel_mobile {
+    margin: auto -10px !important;
+    padding: 0px 16px 30px 16px !important;
+  }
+
+  .container-fluid .carousel-control-prev, .carousel-control-next {
+    margin: auto -20px;
+  }
+
+  #featured-products p {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+/* 3rd media query section */
+/* Custom CSS for aboutUs.html WEB  */
+  .teamPrezySelfIntro {
+    grid-column: repeat(1,1fr);
+  }
+
+  .creatorBanner {
+    grid-column: 1/span 4;
+  }
+
+  .creator img {
+    grid-column: 2;
+  }
+
+  .personalSpace {
+    grid-row: 1/span 2;
+  }
+
+  .no1 {
+    grid-row: 3;
+    grid-column: 1/span 2;
+  }
+
+  .no2 {
+  grid-row: 3;
+  grid-column: 3/span 2;
+  }
+
+  .no3 {
+  grid-row: 4;
+  grid-column: 1/span 2;
+  }
+
+  .no4 {
+  grid-row: 4;
+  grid-column: 3/span 2;
+  }
+
+}
+
+@media screen and (max-width: 500px){
+  .topBanner {
+    margin-top: 40px;
+  }
+  
+  .teamPrezySelfIntro {
+    grid-column: repeat(1,1fr);
+  }
+
+  .personalSpace {
+    grid-column: 1/span 4;
+  }
+
+  .creatorBanner {
+    grid-column: 1/span 4;
+  }
+  .creator img {
+    grid-column: 2;
+  }
+
+  .no1 {
+    grid-row: 3;
+  }
+
+  .no1 > p{
+    grid-column: 10;
+  }
+
+  .no2 {
+   grid-row: 5;
+ }
+
+ .no2 > p{
+  grid-column: 10;
+}
+
+ .no3 {
+   grid-row: 7;
+ }
+
+ .no3 > p{
+  grid-column: 10;
+}
+
+ .no4 {
+   grid-row: 9;
+ }
+ 
+ .no4 > p{
+  grid-column: 10;
+}
+ 
+  
+}

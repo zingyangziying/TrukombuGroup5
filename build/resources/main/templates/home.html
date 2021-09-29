@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Custom CSS for Footer Margin Issues, add class="mb-6" on last Section -->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Bootstrap Font Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!-- Form Validation Script -->
+    <script src="js/form_validation.js"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+    <title>TRUKOMBU</title>
+  </head>
+
+  <body>
+    <!-- Start of Navbar & Contact Us Modal Fragment -->
+    <div th:insert="fragments/navbar.html :: navbar"></div>
+    <div th:insert="fragments/navbar.html :: contactUsModal"></div>
+    <!-- End of Navbar & Contact Us Modal Fragment -->
+
+
+
+    <!-- Jumbotron -->
+    <section class="jumbotron jumbotron-fluid jumbotron_pic mt-5">
+        <div class="container">
+          <div class="container-content">
+            <h1 class="display-3">The real kombucha<br>
+            for real people</h1>
+            <p class="lead">Small batches. Slow fermentation.<br>
+            Raw and organic ingredients.<br>
+            No fillers. Nothing to hide.</p>
+            <br>
+            <a href="productListing.html" class="buttonShopNow" role="button" aria-pressed="true">Shop Now</a>
+          </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <!-- Ray: add pb, pt mt class -->
+    <section id="featured-products">
+      <div class="container-fluid prezytealbg adjustcontainer-fluid pb-3 pt-4.5">
+          <h1>Featured Products</h1>
+          <p class="lead">See what others have been loving.</p>
+
+        <!-- Start Carousel -->
+        <div class="container-xl">
+          <div class="row">
+            <div class="col-md-12 mx-auto">
+              <div id="featuredCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+
+                <!-- Carousel indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#featuredCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#featuredCarousel" data-slide-to="1"></li>
+                </ol>   
+
+                <!-- Carousel controls -->
+                <a class="carousel-control-prev" href="#featuredCarousel" data-slide="prev">
+                  <i class="bi bi-arrow-left"></i>
+                </a>
+                <a class="carousel-control-next" href="#featuredCarousel" data-slide="next">
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+
+                <!-- Wrapper for carousel items -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <!-- Carousel Item 1-->
+                      <div class="col-sm-4">
+                        <div class="thumb-wrapper">
+                          <div class="img-box">
+                            <img src="/images/Homepage Apple Ginger.png" class="img-fluid" alt="Apple Ginger Kombucha">
+                          </div>
+                          <div class="thumb-content">
+                            <h4>Apple Ginger Kombucha</h4>
+                            <p>This Apple Ginger flavored Kombucha gives a faint apple flavor which comes with a kick thanks to the ginger!</p>
+                            <a href="productListing.html" class="btn btn-primary">More</a>
+                          </div>						
+                        </div>
+                      </div>
+                      <!-- Carousel Item 2-->                    
+                      <div class="col-sm-4">
+                        <div class="thumb-wrapper">
+                          <div class="img-box">
+                            <img src="/images/Homepage Blueberry Mint.png" class="img-fluid" alt="Blueberry Mint Kombucha">
+                          </div>
+                          <div class="thumb-content">
+                            <h4>Blueberry Mint Kombucha</h4>
+                            <p>This Blueberry Mint flavored Kombucha is a perfect balance of sweet berry and smooth mint!</p>
+                            <a href="productListing.html" class="btn btn-primary">More</a>
+                          </div>						
+                        </div>
+                      </div>
+                      <!-- Carousel Item 3-->				
+                      <div class="col-sm-4">
+                        <div class="thumb-wrapper">
+                          <div class="img-box">
+                            <img src="/images/Homepage Carrot Apple.png" class="img-fluid" alt="Carrot Apple Kombucha">
+                          </div>
+                          <div class="thumb-content">
+                            <h4>Carrot Apple Kombucha</h4>
+                            <p>If you are wondering if Carrot and Apple goes well together, it does! This is a Kombucha flavor that is slightly savory thanks to the Carrots!</p>
+                            <a href="productListing.html" class="btn btn-primary">More</a>
+                          </div>						
+                        </div>					
+                      </div>
+                    </div>
+                  </div>
+                  <!-- carousel overflow-->
+                  <div class="carousel-item">
+                    <div class="row">
+                      <!-- Carousel Item 4-->
+                      <div class="col-sm-4">
+                        <div class="thumb-wrapper">
+                          <div class="img-box">
+                            <img src="/images/Homepage Grapefruit.png" class="img-fluid" alt="Grapefruit Kombucha">
+                          </div>
+                          <div class="thumb-content">
+                            <h4>Grapefruit Kombucha   <br><br></h4>
+                            <p>This Grapefruit flavored Kombucha is light, citrus-y and ultra refreshing! It makes for a perfect beverage on a hot sunny day!</p>
+                            <a href="productListing.html" class="btn btn-primary">More</a>
+                          </div>						
+                        </div>
+                      </div>
+                      <!-- Carousel Item 5-->
+                      <div class="col-sm-4">
+                        <div class="thumb-wrapper">
+                          <div class="img-box">
+                            <img src="/images/Homepage Lemon Lime.png" class="img-fluid" alt="Lemon Lime Kombucha">
+                          </div>
+                          <div class="thumb-content">
+                            <h4>Lemon Lime Kombucha</h4>
+                            <p>Regardless of your ability to pull off a straight face after chewing on a Lemon, this Kombucha flavor is pleasantly citrus-y and greatly refreshing!</p>
+                            <a href="productListing.html" class="btn btn-primary">More</a>
+                          </div>						
+                        </div>
+                      </div>
+                      <!-- Carousel Item 6-->
+                      <div class="col-sm-4">
+                        <div class="thumb-wrapper">
+                          <div class="img-box">
+                            <img src="/images/Homepage Pear Almond.png" class="img-fluid" alt="Pear Almond Kombucha">
+                          </div>
+                          <div class="thumb-content">
+                            <h4>Pear Almond Kombucha</h4>
+                            <p>This Pear Almond flavored Kombucha combines two surprisingly compatible ingredients to give your tastebuds a light and delightful flavor!</p>
+                            <a href="productListing.html" class="btn btn-primary">More</a>
+                          </div>						
+                        </div>					
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--End Carousel-->
+
+
+
+<!---START Customised Carousel when mobile view-->
+<!---Add hidden class to hide this section of code when view in desktop-->
+<!---it will show when view in mobile-->
+<!---likewise #featuredCarousel (above) is hidden when view in mobile-->
+  
+    <div id="featuredCarousel_mobile" class="carousel slide hidden" data-ride="carousel" data-interval="0">
+
+      <!-- Carousel indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#featuredCarousel_mobile" data-slide-to="0" class="active"></li>
+        <li data-target="#featuredCarousel_mobile" data-slide-to="1"></li>
+        <li data-target="#featuredCarousel_mobile" data-slide-to="2"></li>
+      </ol>   
+
+      <!-- Carousel controls -->
+      <a class="carousel-control-prev" href="#featuredCarousel_mobile" data-slide="prev">
+        <i class="bi bi-arrow-left"></i>
+      </a>
+      <a class="carousel-control-next" href="#featuredCarousel_mobile" data-slide="next">
+        <i class="bi bi-arrow-right"></i>
+      </a>
+
+      <!-- Wrapper for carousel items -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <!-- Carousel Item 1-->
+            <div class="col-sm-12">
+              <div class="thumb-wrapper">
+                <div class="img-box">
+                  <img src="/images/Homepage Apple Ginger.png" class="img-fluid" alt="Apple Ginger Kombucha">
+                </div>
+                <div class="thumb-content">
+                  <h4>Apple Ginger Kombucha</h4>
+                  <a href="#" class="btn btn-primary">More</a>
+                </div>						
+              </div>
+            </div>
+            <!-- Carousel Item 2-->                    
+            <div class="col-sm-12">
+              <div class="thumb-wrapper">
+                <div class="img-box">
+                <img src="/images/Homepage Blueberry Mint.png" class="img-fluid" alt="Blueberry Mint Kombucha">
+                </div>
+                <div class="thumb-content">
+                  <h4>Blueberry Mint Kombucha</h4>
+                  <a href="#" class="btn btn-primary">More</a>
+                </div>						
+              </div>
+            </div>
+          </div>
+        </div>
+      
+
+            <!-- carousel overflow-->
+            <div class="carousel-item">
+              <div class="row">
+                <!-- Carousel Item 3-->				
+                <div class="col-sm-12">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="/images/Homepage Carrot Apple.png" class="img-fluid" alt="Carrot Apple Kombucha">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Carrot Apple Kombucha</h4>
+                      <a href="#" class="btn btn-primary">More</a>
+                    </div>						
+                  </div>					
+                </div>
+
+
+                <!-- Carousel Item 4-->
+                <div class="col-sm-12">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="/images/Homepage Grapefruit.png" class="img-fluid" alt="Grapefruit Kombucha">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Grapefruit Kombucha</h4>
+                      <a href="#" class="btn btn-primary">More</a>
+                    </div>						
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- carousel overflow-->
+            <div class="carousel-item">
+              <div class="row">
+                <!-- Carousel Item 5-->
+                <div class="col-sm-12">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="/images/Homepage Lemon Lime.png" class="img-fluid" alt="Lemon Lime Kombucha">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Lemon Lime Kombucha</h4>
+                      <a href="#" class="btn btn-primary">More</a>
+                    </div>						
+                  </div>
+                </div>
+             
+                <!-- Carousel Item 6-->
+                <div class="col-sm-12">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="/images/Homepage Pear Almond.png" class="img-fluid" alt="Pear Almond Kombucha">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Pear Almond Kombucha</h4>
+                      <a href="#" class="btn btn-primary">More</a>
+                    </div>						
+                  </div>					
+                </div>
+              </div>
+            </div>
+      </div>
+    </div>
+<!---END Customised Carousel when mobile view-->
+
+
+
+      </div>
+    </section>
+
+
+
+
+
+
+    <!--Join the Community-->
+    <!-- Ray: add pb, pt mt class -->
+    <section id="join-the-community" class="container-fluid pt-5 pb-5 mt-2">
+      <h1>Join the Community</h1>
+      <br>
+
+
+   
+
+
+      <form name="homeSubscribeForm" method="post" onsubmit="event.preventDefault(); validateForm()">
+<!---event.preventDefault() to cancels any default action such as submit the form because we need to do form validation first. 
+        contactForm() function will be called (upon click "submit") to do validation. -->
+
+       <p style="color:red;" id="email_prompt"></p>
+       <!---"Thanks for your subscription" will appear when user submits valid email.-->
+
+        <input type="email" name="email" id="email" placeholder="your@email.com" required/>
+        <!---type="email" already have a validation feature to ensure user submits valid email.-->
+
+          <button type="submit">
+            <i class="bi bi-arrow-right-circle" style="font-size: 1.5em;"></i>
+          </button>
+      </form>
+      <br>
+
+      <div class="container-fluid">
+        <div class="justify-content-center">
+          <a class="bi bi-facebook px-2" style="font-size: 1.5em;" href="#"></a>
+          <a class="bi bi-instagram px-2" style="font-size: 1.5em;" href="#"></a>
+          <a class="bi bi-twitter px-2" style="font-size: 1.5em;" href="#"></a>
+          <a class="bi bi-youtube px-2" style="font-size: 1.5em;" href="#"></a>
+        </div>
+      </div> 
+    </section>
+
+    <!-- About Us -->
+    <!-- Ray: add pb, pt mt class -->
+    <section class="container-fluid prezytealbg pt-5 pb-4 mt-3">
+      <h1>About Us</h1>
+      <div class="container-fluid">
+        <div class="justify-content-center">
+          <p class="lead">TruKombu started when four classmates decided they wanted better-tasting kombucha <br>
+          with an honest ingredients list - and were determined to do something about it. Here is their story.</p>
+          <br>
+          <a href="/aboutUs.html" class="buttonReadMore" role="button" aria-pressed="true">Read More</a>
+
+        </div><br>
+      </div> 
+    </section>
+
+
+    <!--Start of Footer Fragment -->
+    <div th:insert="fragments/footer.html :: footer"></div>
+    <!--End of Footer Fragment -->
+
+  </body>
+</html>

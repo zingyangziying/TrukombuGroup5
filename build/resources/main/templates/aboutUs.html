@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"crossorigin="anonymous">
+    <!-- Custom CSS for Footer Margin Issues, add class="mb-6" on last Section -->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Bootstrap Font Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+
+<!-- Form Validation Script -->
+<script src="js/form_validation.js"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+    <title>TRUKOMBU</title>
+  </head>
+
+  <body>
+    <!-- Start of Navbar & Contact Us Modal Fragment -->
+    <div th:insert="fragments/navbar.html :: navbar"></div>
+    <div th:insert="fragments/navbar.html :: contactUsModal"></div>
+    <!-- End of Navbar & Contact Us Modal Fragment -->
+
+
+
+   <!-- Start of About Us Section-->
+   <section class="aboutUsSection">
+    <div>
+      <img src="images/TRUKOMBU.png" class="img d-block w-100 topBanner" alt="TruKombu top banner">
+       
+    </div>
+
+    <div class="MVG">
+      <h1 class="mvgMission">Mission</h1>
+      <p class="mvgMissionP">At TruKombu, we aspire to provide consumers around the island with genuine quality products to help them lead healthier lives for a more confident future.
+      </p>
+      
+      <h1 class="mvgVision">Vision</h1>
+      <p class="mvgVisionP">
+        TruKombu provides genuine quality beverages and convenient services for the wellbeing and vitality of our consumers and customers.
+      </p>
+
+      <h1 class="mvgGoal">Goal</h1>
+      <p class="mvgGoalP">We wanted better-tasting kombucha with honest ingredients. Raw and organic ingredients, just like our personalities.<br><br><b><i style="font-size:85%;"!important>NOTE: no copyright infringement intended. website is for project purposes only.</i></b>
+      </p>
+    
+    </div>
+    
+
+    <!--Start of member's introduction (Web)-->
+      <div class="teamPrezySelfIntro">
+        <span class="creatorBanner">The Creators:</span>
+        <img src="images/teamPReZY.png" class="creator" width="55%">
+
+        <div class="personalSpace no1">
+          <span class="profilePic">
+            <img src="images/Precella Kwok - square.jpg" width="200px" class="dP">
+            <img src="images/P.png" width="200px" class="overLay">
+          </span>
+          <p>
+            Currently an active learner at Generation Singapore, Precella is an experienced Retail professional with a demonstrated history of working in the fashion industry. In her free time, she will be cycling, practicing yoga or patting stranger's dogs.
+          </p>
+          <span class="nameIcon">Precella
+          <a href="https://www.linkedin.com/in/precellakwok" target=”_blank” width="100%">
+            <span class="bi-linkedin iconLinkedin" style="font-size: 2rem"></span>
+          </a></span>
+        </div>
+      
+
+        <div class="personalSpace no2">
+          <span class="profilePic">
+            <img src="images/ray.jpg" width="200px" class="dP">
+            <img src="images/R.png" width="200px" class="overLay">
+          </span>
+          <p>
+            As a business and tech enthusiast, Rayleigh would like to apply what he learnt from JFSD bootcamp to create product and service which are market worthy. Being a parent, his free time is mostly occupied by his toddler.
+          </p>
+          <span class="nameIcon">Rayleigh
+          <a href="https://www.linkedin.com/in/rayleigh-chan" target=”_blank” width="100%">
+            <span class="bi-linkedin iconLinkedin" style="font-size: 2rem"></span>
+          </a></span>
+        </div>
+      
+
+        <div class="personalSpace no3">
+          <span class="profilePic">
+            <img src="images/zing.jpg" width="200px" class="dP">
+            <img src="images/Z.png" width="200px" class="overLay">
+          </span>
+          <p>
+            As a Junior Full Stack Developer student, Ziying is able to apply transferable skills from his past experience in the Tourism industry. Outside of work, Ziying unwinds by playing computer games and reading mangas.
+          </p>
+          <span class="nameIcon">Ziying
+          <a href="https://www.linkedin.com/in/zingyangziying" target=”_blank” width="100%">
+            <span class="bi-linkedin iconLinkedin" style="font-size: 2rem"></span>
+          </a></span>
+        </div>
+      
+        <div class="personalSpace no4">
+          <span class="profilePic">
+            <img src="images/Yana.JPG" width="200px" class="dP">
+            <img src="images/Y.png" width="200px" class="overLay">
+          </span>
+          <p>
+            As an individual undergoing mid-career change, Yana dreams to pass down her knowledge to underprivileged citizens in Pakistan. With hopes to bring light in their lives. To relax, she plays rubiks cube and watches youtube.
+          </p>
+          <span class="nameIcon">Yana
+          <a href="https://www.linkedin.com/in/maryanah-yusoff" target=”_blank” width="100%">
+            <span class="bi-linkedin iconLinkedin" style="font-size: 2rem"></span>             
+          </a></span>
+        </div> 
+      </div>
+    </section>
+    <!-- End of aboutUs Section! -->
+
+    
+
+ 
+
+    <section class="container-fluid"></section>
+
+
+    <!--Start of Footer Fragment -->
+    <div th:insert="fragments/footer.html :: footer"></div>
+    <!--End of Footer Fragment -->
+
+  </body>
+</html>
